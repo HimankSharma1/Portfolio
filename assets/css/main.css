@@ -1,0 +1,322 @@
+
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1.5;
+    color: #555;
+    font-family: 'Nunito Sans', sans-serif
+}
+
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+#particles-js {
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000, #383838);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000000, #383838);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    vertical-align: bottom;
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+#particles-js .particles-js-canvas-el {
+    width: 100% !important;
+    height: 100vh !important
+}
+
+
+.header {
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.header .title {
+    font-size: 35px;
+    display: block;
+    line-height: 1;
+    color: #fff;
+}
+
+@media only screen and (min-width:550px) {
+    .header .title {
+        margin: 0;
+        font-size: 100px
+    }
+}
+
+.header .description {
+    font-size: 20px;
+    display: block;
+    line-height: 1;
+    color: #fff;
+    margin-top: 10px
+}
+
+@media only screen and (min-width:550px) {
+    .header .description {
+        font-size: 40px
+    }
+}
+
+.header-icons {
+    display: flex;
+    justify-content: center;
+    text-align: center
+}
+
+.down,
+.icons .icon {
+    color: #fff;
+    text-align: center
+}
+
+.icons .icon {
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transition: all .7s;
+    width: 20px;
+    font-size: 20px;
+    margin: 5px
+}
+
+.icons .icon:active,
+
+#linkedin:hover,#mail:hover{
+    color: white;
+    border: 2px solid #0078b1;
+    background-color: #0078b1;
+}
+
+#instagram:hover{
+    color: white;
+    background-image: linear-gradient(120deg ,rgb(237, 87, 234),  red, yellow );
+    border: 2px outset transparent;
+}
+#github:hover{
+    color: black;
+    background-color: white;
+    /* border: 2px outset transparent; */
+}
+
+
+@media only screen and (min-width:550px) {
+    .icons .icon {
+        width: 35px;
+        height: 35px;
+        font-size: 35px
+    }
+}
+
+.scroll-links {
+    margin: 10px
+}
+
+.scroll-links .link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 10px
+}
+
+@media only screen and (min-width:550px) {
+    .scroll-links .link {
+        font-size: 20px
+    }
+}
+
+.details {
+    text-align: center;
+    margin: 5px auto
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto
+}
+
+@media only screen and (min-width:550px) {
+    #projects {
+        width: 80%
+    }
+}
+
+.project, .achievement {
+    margin: 20px auto
+}
+
+.project img, .achievement img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px
+}
+
+.project video, .achievement video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px
+}
+
+.project p, .achievement p {
+    margin-right: 5px
+}
+
+@media only screen and (min-width:550px) {
+    .content {
+        margin-left: 0;
+        width: 48%
+    }
+
+    .content,
+    .content-right {
+        margin-top: -5%
+    }
+
+    .content-right,
+    .image-right {
+        float: right;
+        width: 48%
+    }
+
+    .image-right img {
+        float: right
+    }
+
+    .image-left {
+        float: left;
+        width: 48%
+    }
+
+    .image-left img {
+        float: left
+    }
+}
+
+.project-link {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px;
+    color: #1488CC;
+    background-color: transparent;
+    border: 1px solid #1488CC;
+    border-radius: 10px;
+    text-align: center;
+    outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out
+}
+
+.project-link:active,
+.project-link:hover {
+    background-color: #5347a8;
+    border-color: #5347a8;
+    color: #fff;
+    transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in
+}
+
+
+#gallery{
+    position: relative;
+    
+}
+
+#photos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto
+}
+
+#popup-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+#popup-image span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#popup-image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    width: 750px;
+    object-fit: cover;
+}
+
+@media (max-width:768px){
+    #popup-image img{
+        width: 95%;
+    }
+}
+
+
+#photos .image, .video{
+    height: 250px;
+    width: 350px;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#photos .image img, .video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+#photos .image:hover img, .video:hover video{
+    transform: scale(1.5);
+}

@@ -2,8 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
 @import url(https://fonts.googleapis.com/css?family=Rubik);
 
-
-
+body,html{
+    overflow-x: hidden;
+}
 .head{
     position: sticky;
     top: 0;
